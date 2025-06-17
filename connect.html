@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="description" content="Connect with me for more time management support and tips." />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Connect - Time Management</title>
+      <link rel="stylesheet" href="style/global.css" />
+      <link rel="stylesheet" href="style/niche.css" />
+   </head>
+   <body>
+      <div class="container"> 
+         <header>
+            <img src="images/connect.png" alt="Connect with me title" id="title" />
+            <nav>
+               <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="technique.html">Techniques</a></li>
+                  <li class="active"><a href="connect.html">Connect</a></li>
+               </ul>
+            </nav>
+         </header>
+
+         <main>
+            <section>
+               <h1>Connect</h1>
+               <form action="namad611@mtroyal.ca" method="post" enctype="text/plain">
+                  <label for="subject">Subject (required):</label>
+                  <input type="text" id="subject" name="subject" required maxlength="100" /><br /><br />
+
+                  <label for="message">Message (required):</label>
+                  <textarea id="message" name="message" required rows="5" cols="40"></textarea><br /><br />
+
+                  <label for="email">Email (required):</label>
+                  <input type="email" id="email" name="email" required placeholder="example@domain.com"
+                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" /><br /><br />
+
+                  <label for="phone">Phone (optional):</label>
+                  <input type="tel" id="phone" name="phone" placeholder="123-434-7578"
+                     pattern="\d{3}[-\.\s]?\d{3}[-\.\s]?\d{4}" /><br /><br />
+
+                  <label>Main Contact Method:</label><br />
+                  <input type="radio" id="emailOption" name="contactMethod" value="Email" checked />
+                  <label for="emailOption">Email</label><br />
+                  <input type="radio" id="phoneOption" name="contactMethod" value="Phone" />
+                  <label for="phoneOption">Phone</label><br /><br />
+
+                  <label>Topics of Interest:</label><br />
+                  <input type="checkbox" id="studyTips" name="topics" value="Study Tips" />
+                  <label for="studyTips">Study Tips</label><br />
+                  <input type="checkbox" id="other" name="topics" value="Other concerns" />
+                  <label for="other">Other concerns</label><br />
+                  <input type="checkbox" id="tools" name="topics" value="Time Tools" />
+                  <label for="tools">Time Tools</label><br /><br />
+
+                  <label for="date">Preferred Contact Date:</label>
+                  <input type="date" id="date" name="date" /><br /><br />
+
+                  <input type="reset" value="Reset" />
+                  <input type="submit" value="Submit" />
+               </form>
+            </section>
+         </main>
+
+         <footer>
+            <p>&copy; 2025 Time Management Guide - Mount Royal University</p>
+         </footer>
+      </div> 
+   </body>
+</html>
